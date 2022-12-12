@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+*{
+    font-family: 'Pacifico', cursive;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(./assets/cover-candy.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.title{
+    height: 3rem;
+    background-color: #ffbac5;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.status{
+    background-color: #fcc8c9;
+    border-radius: 5px;
+    padding: .2rem 1rem;
+}
+
+.container{
+    width: 100%;
+    text-align: center;
+    padding: .8rem;
+}
+
+.board{
+    width: 30%;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    gap: .1rem .1rem;
+    margin: auto;
+}
+
+.cell{
+    aspect-ratio: 1/1;
+    background-color: #5a6979;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 2px;
+}
+
+.scale{
+    transform: scale(1.1);
+}
+
+.cell > img{
+    width: 100%;
+}
+
+@media only screen and (max-width: 850px) {
+    body{
+        font-size: 1.1rem;
+    }
+
+    .title{
+        height: 4rem;
+    }
+
+    .board{
+        width: 80%;
+    }
+  }
